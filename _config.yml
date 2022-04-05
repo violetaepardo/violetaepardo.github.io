@@ -1,5 +1,24 @@
-theme: jekyll-theme-minimal
-title: Violeta Epardo's homepage
-description: Bookmark this to keep an eye on my project updates!
-name: Violeta Epardo
-avatar: https://avatars.githubusercontent.com/u/70412439?v=4
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
